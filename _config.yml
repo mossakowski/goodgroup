@@ -1,0 +1,8 @@
+name: Good Group 69 - Niezapomniane imprezy
+
+exclude: [materialy]
+
+# Sass settings
+
+sass:
+    style: :compressed

@@ -1,0 +1,90 @@
+<section id="contact" class="mt-4 text-light">
+  <h1 class="section-header display-4 mt-4 pl-3 pr-3">Kontakt</h1>
+  <div id="map"></div>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-lg-6 mb-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 d-flex align-items-center justify-content-end">
+              <img alt="Best Events" src="assets/img/bestEvents.png">
+            </div>
+            <div class="col-lg-6">
+              <div class="infor text-light">
+                <p><b>AGENCJA EVENTOWA BEST-EVENTS</b></br>
+                Dariusz Skrzydłowski</br>
+                Zacisze 8a</br>
+                95-200 Pabianice
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-4">
+          <div class="row">
+            <div class="col-lg-3 d-flex align-items-center justify-content-end">
+              <img alt="Best Events" src="assets/img/goodgroup.png">
+            </div>
+            <div class="col-lg-6">
+              <div class="infor">
+                <p><b>Good Group 69</b></br>
+                Menadżer Regionu - Marek Kuźnik</br>
+                + 48 729 988 640</br>
+                marek@good-group69.pl</br>
+                <a href="http://www.good-group69.pl">www.good-group69.pl</a></br>
+                <a href="http://www.best-group.pl">www.good-group69.pl</a></br>
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-6">
+
+          <form method="post" onsubmit="return Validate();" action="" class="form-horizontal" name="formValidation">
+            <fieldset>
+              <!-- Form Name -->
+              <legend><b>Napisz do nas</b></legend>
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="control-label" for="sender">Imię</label>
+                <div class=" ">
+                  <input id="sender" name="sender" type="text" placeholder="Twoje imie" class="form-control input-md">
+                  <div id="sender_error" class="form-error"></div>
+                </div>
+              </div>
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="control-label" for="email">Email*</label>
+                  <input id="email" name="email" type="text" placeholder="Twój email" class="form-control input-md">
+                  <div id="email_error" class="form-error"></div>
+              </div>
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="control-label" for="telefon">Telefon</label>
+                  <input id="phone" name="phone" type="text" placeholder="Twój nr telefonu" class="form-control input-md">
+                  <div id="error_phone" class="form-error"></div>
+              </div>
+              <!-- Textarea -->
+              <div class="form-group">
+                <label class="control-label" for="message">Wiadomość*</label>
+                  <textarea class="form-control" id="message" name="message" placeholder="Twoja wiadomość"></textarea>
+                  <div id="message_error" class="form-error"></div>
+              </div>
+
+              <div class="form-group">
+                <input type="submit" value="Wyślij">
+                <input type="reset" value="Wyczyść">
+              </div>
+
+            </fieldset>
+          </form>
+              <div>
+                <label>* Pola z gwiazdką są wymagane</label>
+              </div>
+      </div>
+  </div>
+</div>
+</section>

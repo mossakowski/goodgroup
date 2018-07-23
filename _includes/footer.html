@@ -1,0 +1,92 @@
+<footer class="text-light text-center pt-2 pb-2">
+  <p>GOOD Group :<br> Przedstawicielstwo na Polskę Południową<br>
+    Strona wykonana przez Good Group 69 <br> Wszystkie prawa zastrzeżone <span id="footer-year"></span>
+  </p>
+</footer>
+</div>
+  <!-- end wraper -->
+  <script>
+
+
+
+    var currentYear = new Date();
+    var footerYear = document.getElementById('footer-year');
+    footerYear.innerHTML = currentYear.getFullYear();
+
+    function initMap() {
+      var uluru = {
+        lat: 51.652,
+        lng: 19.340
+      };
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+
+    // $.fn.extend({
+    //   animateCss: function(animationName, callback) {
+    //     var animationEnd = (function(el) {
+    //       var animations = {
+    //         animation: 'animationend',
+    //         OAnimation: 'oAnimationEnd',
+    //         MozAnimation: 'mozAnimationEnd',
+    //         WebkitAnimation: 'webkitAnimationEnd',
+    //       };
+    //
+    //       for (var t in animations) {
+    //         if (el.style[t] !== undefined) {
+    //           return animations[t];
+    //         }
+    //       }
+    //     })(document.createElement('div'));
+    //
+    //     this.addClass('animated ' + animationName).one(animationEnd, function() {
+    //       $(this).removeClass('animated ' + animationName);
+    //
+    //       if (typeof callback === 'function') callback();
+    //     });
+    //
+    //     return this;
+    //   },
+    // });
+
+    // $('#welcome-img-index2').animateCss('rotateIn', function() {
+    //   $('.welcome-img-2').animate({
+    //     left: '110px',
+    //     'display': 'block'
+    //   });
+    //   $('.welcome-img-1').animate({
+    //     left: '-80px'
+    //   });
+    // });
+    //
+    //   $("#accordion").accordion({
+    //     active: 'false',
+    //     heightStyle: "content",
+    //     collapsible: true
+    //   });
+
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXJUTihHrFYmgoMzX9hm4c0CkjS2HMETg&callback=initMap"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="assets/slick/slick.min.js"></script>
+  <script src="assets/js/slider.js"></script>
+  <script src="assets/js/lazyScroll.js"></script>
+  <script src="assets/js/scaleLogo.js"></script>
+  <script src="assets/js/jquery.fancybox.min.js"></script>
+  <script src="assets/js/jquery-ui.min.js"></script>
+  <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+
+
+</body>
+
+</html>
