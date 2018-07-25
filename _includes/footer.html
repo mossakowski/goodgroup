@@ -65,11 +65,7 @@
     //   });
     // });
     //
-    //   $("#accordion").accordion({
-    //     active: 'false',
-    //     heightStyle: "content",
-    //     collapsible: true
-    //   });
+
 
   </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXJUTihHrFYmgoMzX9hm4c0CkjS2HMETg&callback=initMap"></script>
@@ -85,7 +81,15 @@
   <!--[if lt IE 9]>
        <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
      <![endif]-->
-
+     <script>
+     $( document ).ready(function() {
+       $("#accordion").accordion({
+         active: 'false',
+         heightStyle: "content",
+         collapsible: true
+       });
+     });
+ </script>
 
 </body>
 

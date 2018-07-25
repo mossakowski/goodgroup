@@ -1,6 +1,5 @@
 ---
 ---
-
 $bg-color: #1a2786;
 $bg-color-section: #021529;
 $nav-bg-color: #000;
@@ -85,6 +84,12 @@ header {
       height: 100vh;
     }
   }
+
+  .intro-slider-subpage {
+    div {
+      height: 40vh;
+    }
+  }
 }
 
 #about {
@@ -93,7 +98,7 @@ header {
 }
 
 #realization {
-  background: url('/assets/img/bg-realizations.jpg');
+  background: url("/assets/img/bg-realizations.jpg");
 
   .realizations-gallery {
     padding: 0;
@@ -140,7 +145,7 @@ header {
 
 #contact {
   font-size: 1.2rem;
-  background: url('/assets/img/bg-contact.jpg');
+  background: url("/assets/img/bg-contact.jpg");
 
   #map {
     height: 400px;
@@ -148,6 +153,64 @@ header {
 
   a {
     color: $nav-font-color;
+  }
+}
+
+#offer {
+  background: $bg-color-section;
+
+#test2 {
+
+  .test {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  }
+}
+
+  #accordion {
+    .offer-heading {
+      padding: 0;
+      height: 200px;
+      position: relative;
+
+      img {
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      h2 {
+        padding: 15px 20px;
+        background: #021529;
+        z-index: 998;
+        position: absolute;
+        top: 60px;
+        left: 0;
+      }
+    }
+
+    .ui-state-active {
+      img {
+        -webkit-filter: blur(0);
+        -moz-filter: blur(0);
+        -o-filter: blur(0);
+        -ms-filter: blur(0);
+        filter: blur(0);
+      }
+    }
   }
 }
 
